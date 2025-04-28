@@ -55,7 +55,7 @@ function App() {
             onClick={handleSubmit}
             disabled={isLoading}
           >
-            {isLoading ? "Sending..." : "Send"}
+            {isLoading ? "Analyzing..." : "Analyze"}
           </button>
         </div>
       </div>

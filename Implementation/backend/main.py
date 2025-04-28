@@ -21,7 +21,6 @@ class UrlRequest(BaseModel):
 
 @app.post("/predict")
 def predict(req: UrlRequest):
-    # Replace with your ML prediction logic
     url = req.url
     gbc = pickle.load(open("./gbc_model.pkl","rb"))
     obj = FeatureExtraction(url)
